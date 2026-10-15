@@ -30,7 +30,7 @@ Install `node_modules` on the same operating system and CPU that will run the co
 
 3. From the Equicord repository, run `pnpm build`. Fully quit Discord, then open it again. Equicord loads `dist/desktop`, so a source-only copy does not appear until this build is running.
 
-4. In Equicord settings, enable **MVC**, set **companion entry** to the absolute path of this repo's `companion/start.cjs`.
+4. In Equicord settings, enable **MVC**. Set **companion entry** to the absolute path of `companion/start.cjs` inside the folder where you placed this project. If you move that folder, update the path to match the new location.
 
 ## Warning
 
