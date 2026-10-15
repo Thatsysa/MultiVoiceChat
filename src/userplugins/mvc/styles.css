@@ -1,0 +1,199 @@
+.mvc-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: var(--text-normal);
+}
+
+.mvc-error {
+  color: var(--text-danger);
+}
+
+.mvc-milestones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.mvc-met,
+.mvc-unmet {
+  padding: 2px 8px;
+  font-size: 12px;
+  border-radius: 999px;
+}
+
+.mvc-met {
+  color: var(--white, #fff);
+  background: var(--status-positive-background, #248046);
+}
+
+.mvc-unmet {
+  color: var(--text-muted);
+  background: var(--background-modifier-accent);
+}
+
+.mvc-row {
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) repeat(2, auto) minmax(120px, 160px) auto auto;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 0;
+  border-top: 1px solid var(--background-modifier-accent);
+}
+
+.mvc-phase {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.mvc-button {
+  padding: 6px 10px;
+  color: var(--text-normal);
+  cursor: pointer;
+  background: var(--button-secondary-background);
+  border: 0;
+  border-radius: 4px;
+}
+
+.mvc-voice-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 8px 8px;
+}
+
+.mvc-voice-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  padding: 8px;
+  color: var(--text-normal);
+  background: transparent;
+  border-radius: 8px;
+}
+
+.mvc-voice-head {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  min-width: 0;
+}
+
+.mvc-voice-mark {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  background: var(--status-positive, #248046);
+  border-radius: 8px;
+}
+
+.mvc-voice-mark.is-failed {
+  background: var(--status-danger, #da373c);
+}
+
+.mvc-voice-mark.is-busy {
+  background: var(--background-mod-strong, #4e5058);
+}
+
+.mvc-voice-mark svg,
+.mvc-voice-hangup svg,
+.mvc-voice-action svg {
+  width: 18px;
+  height: 18px;
+}
+
+.mvc-voice-hangup svg {
+  transform: rotate(135deg);
+}
+
+.mvc-voice-titles {
+  flex: 1;
+  min-width: 0;
+}
+
+.mvc-voice-status,
+.mvc-voice-subtitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mvc-voice-status {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  color: var(--status-positive, #23a559);
+}
+
+.mvc-voice-status.is-failed {
+  color: var(--text-danger, #da373c);
+}
+
+.mvc-voice-status.is-busy {
+  color: var(--text-muted);
+}
+
+.mvc-voice-subtitle {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--text-muted);
+}
+
+.mvc-voice-hangup,
+.mvc-voice-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: var(--interactive-normal, #b5bac1);
+  cursor: pointer;
+  border: 0;
+}
+
+.mvc-voice-hangup {
+  flex: 0 0 auto;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border-radius: 4px;
+}
+
+.mvc-voice-hangup:hover {
+  color: #fff;
+  background: var(--status-danger, #da373c);
+}
+
+.mvc-voice-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.mvc-voice-action {
+  height: 32px;
+  background: var(--background-mod-strong, rgb(0 0 0 / 30%));
+  border-radius: 4px;
+}
+
+.mvc-voice-action:hover {
+  color: var(--interactive-hover, #dbdee1);
+  background: var(--background-modifier-hover, rgb(255 255 255 / 8%));
+}
+
+.mvc-voice-action.is-danger,
+.mvc-voice-action.is-danger:hover {
+  color: #fff;
+  background: var(--status-danger, #da373c);
+}
+
+.mvc-voice-volume {
+  width: 100%;
+  height: 4px;
+  margin: 0;
+  accent-color: var(--brand-500, #5865f2);
+}
