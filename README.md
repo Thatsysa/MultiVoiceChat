@@ -18,7 +18,7 @@ MVC joins one extra voice channel per server. That channel uses its own Discord 
 
 ## Install
 
-1. Copy `src/userplugins/mvc` to `Equicord/src/userplugins/mvc`. Leave the repo's `companion` folder where it is. Equicord does not need it.
+1. Copy `src/userplugins/mvc` to `Equicord/src/userplugins/mvc`, and leave `tsconfig.json` behind. That file is only for editing this repo. A second one inside Equicord hides Equicord's own import paths and the build fails. Leave the repo's `companion` folder where it is. Equicord does not need it.
 2. From this repo's `companion` folder, run:
 
 ```bash
