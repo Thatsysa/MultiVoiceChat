@@ -1,4 +1,4 @@
-# MVC
+# MVC - Equicord Plugin
 
 ## What the plugin does
 
