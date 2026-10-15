@@ -39,7 +39,7 @@ const controller = createVoiceController({
 
 export default definePlugin({
   name: "MVC",
-  authors: [{ id: 1n, name: "YSA" }],
+  authors: [{ id: 412724203306090507n, name: "YSA" }],
   contextMenus: {
     "channel-context"(children, props) {
       const channel = props?.channel;
