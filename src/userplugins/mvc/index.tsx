@@ -2,7 +2,7 @@ import ErrorBoundary from "@components/ErrorBoundary";
 import definePlugin, { type PluginNative } from "@utils/types";
 import { Menu, Toasts } from "@webpack/common";
 import { describeChannel, getToken } from "./joinVoice/discord-channel";
-import { confirmReplacement, confirmRisk } from "./joinVoice/risk-prompt";
+import { confirmReplacement } from "./joinVoice/risk-prompt";
 import { openManager } from "./manager/mvc-modal";
 import { createBrowserPlayback } from "./playback/browser-playback";
 import { settings } from "./settings";
@@ -34,7 +34,6 @@ const controller = createVoiceController({
   native: nativePort(),
   playback: createBrowserPlayback(),
   registry,
-  riskAccepted: () => settings.store.riskAccepted,
 });
 
 export default definePlugin({
@@ -95,12 +94,6 @@ export default definePlugin({
 });
 
 async function joinChannel(channelId: string): Promise<void> {
-  if (!settings.store.riskAccepted) {
-    const accepted = await confirmRisk();
-    if (!accepted) {
-      return;
-    }
-  }
   const failure = await controller.connect(channelId);
   if (failure === "replace-required") {
     const replace = await confirmReplace();

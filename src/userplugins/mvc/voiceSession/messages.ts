@@ -19,8 +19,6 @@ export const FAILURE_MESSAGES: Record<ConnectFailure, string> = {
     "This server already uses the main Discord voice connection.",
   "replace-required":
     "This server already has a secondary voice connection. Confirm before replacing it.",
-  "risk-not-accepted":
-    "Accept the account-risk warning before opening a secondary voice session.",
   "stage-unsupported": "Stage channels are not supported.",
   "token-unavailable":
     "The current Discord session could not be read. Reconnect Discord and try again.",

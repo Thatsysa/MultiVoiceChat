@@ -119,7 +119,6 @@ export function createVoiceController(deps: {
   discord: DiscordPort;
   native: NativePort;
   registry: ConnectionRegistry;
-  riskAccepted: () => boolean;
   companionEntry: () => string;
   playback: PlaybackPort;
   microphone: MicrophonePort;
@@ -139,9 +138,6 @@ export function createVoiceController(deps: {
     channelId: string,
     confirmReplace = false
   ): Promise<ConnectFailure | null> {
-    if (!deps.riskAccepted()) {
-      return fail("risk-not-accepted");
-    }
     const entry = deps.companionEntry();
     if (!isSafeCompanionEntry(entry)) {
       return fail("companion-entry");

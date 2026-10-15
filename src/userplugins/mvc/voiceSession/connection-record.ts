@@ -39,7 +39,6 @@ export type JoinRefusal =
   | "invalid-channel";
 
 export type ConnectFailure =
-  | "risk-not-accepted"
   | "companion-entry"
   | "token-unavailable"
   | "replace-required"
