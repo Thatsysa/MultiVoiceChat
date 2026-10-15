@@ -34,4 +34,4 @@ Install `node_modules` on the same operating system and CPU that will run the co
 
 ## Warning
 
-Discord does not support this extra session. Using it can get the account disabled. Only use it in a channel where everyone knows about it, and only on an account you can afford to lose.
+Discord does not support this extra session. Using it can get the account disabled.
