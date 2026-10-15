@@ -16,3 +16,4 @@ skills-lock.json
 /biome.jsonc
 /pnpm-lock.yaml
 /.vscode/settings.json
+src/userplugins/mvc/equicord.d.ts
