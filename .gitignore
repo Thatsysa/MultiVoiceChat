@@ -17,3 +17,4 @@ skills-lock.json
 /pnpm-lock.yaml
 /.vscode/settings.json
 src/userplugins/mvc/equicord.d.ts
+companion/tests/
