@@ -18,19 +18,17 @@ MVC joins one extra voice channel per server. That channel uses its own Discord 
 
 ## Install
 
-1. Copy `src/userplugins/mvc` to `Equicord/src/userplugins/mvc`, and leave `tsconfig.json` behind. That file is only for editing this repo. A second one inside Equicord hides Equicord's own import paths and the build fails. Leave the repo's `companion` folder where it is. Equicord does not need it.
-2. From this repo's `companion` folder, run:
+1. Copy `src/userplugins/mvc` to `Equicord/src/userplugins/mvc`. From the Equicord folder, run `pnpm build`. Quit Discord, then open it again. The plugin shows up after that build.
+
+2. Put the `companion` folder where you want. then run this inside the folder:
 
 ```bash
 npm install
 npm run build
 ```
 
-Install `node_modules` on the same operating system and CPU that will run the companion. `npm run build` writes `companion/dist`, and `start.cjs` runs that output.
 
-3. From the Equicord repository, run `pnpm build`. Fully quit Discord, then open it again. Equicord loads `dist/desktop`, so a source-only copy does not appear until this build is running.
-
-4. In Equicord settings, enable **MVC**. Set **companion entry** to the absolute path of `companion/start.cjs` inside the folder where you placed this project. If you move that folder, update the path to match the new location.
+3. In Equicord settings, enable **MVC**. Set **companion entry** to the full path of `start.cjs` in the companion folder you used. If you move that folder, change the path.
 
 ## Warning
 
