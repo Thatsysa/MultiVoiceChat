@@ -12,6 +12,5 @@
     "strict": true,
     "target": "ESNext"
   },
-  "exclude": ["companion"],
   "include": ["./**/*.ts", "./**/*.tsx", "./equicord.d.ts"]
 }

@@ -5,7 +5,7 @@ export const settings = definePluginSettings({
   companionEntry: {
     default: "",
     description:
-      "Absolute path to mvc/companion/start.cjs after the companion has been built.",
+      "Absolute path to companion/start.cjs after the companion has been built.",
     type: OptionType.STRING,
   },
   riskAccepted: {
